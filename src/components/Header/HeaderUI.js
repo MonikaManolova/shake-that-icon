@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../constants";
+import { colors, bodyStyles } from "../../constants";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
 export const StyledNavbar = styled(Navbar)`
@@ -11,16 +11,21 @@ export const StyledContainer = styled(Container)`
   margin: 0 100px;
   max-width: 1240px;
 
+  @media screen and (max-width: 1050px) {
+    margin: 0 50px;
+  }
   @media screen and (min-width: 992px) {
     .navbar-nav {
       align-items: center;
     }
   }
+  @media screen and (max-width: 420px) {
+    margin: 0px 20px;
+  }
 `;
 
 export const NavItem = styled(Nav.Link)`
-  font-size: 16px;
-  font-family: "Gilroy-SemiBold";
+  ${bodyStyles.medium_16.semiBold};
   color: ${colors.neutral.light_40};
   padding-right: 30px !important;
   padding-left: 0 !important;
@@ -36,8 +41,7 @@ export const StyledButton = styled(Button)`
   border-radius: 8px;
   background: ${colors.neutral.black_90};
   color: ${colors.neutral.white};
-  font-size: 16px;
-  font-family: "Gilroy-SemiBold";
+  ${bodyStyles.medium_16.semiBold};
   svg {
     margin-right: 10px;
   }

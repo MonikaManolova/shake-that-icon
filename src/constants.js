@@ -5,6 +5,7 @@ export const colors = {
     black_100: "#141417",
     black_95: "#18191C",
     black_90: "#1e2023",
+    black_80: "#2A2C31",
     light_50: "#8E8F91",
     light_40: "#A5A6A7",
     light_30: "#C4C6C8",
@@ -12,6 +13,7 @@ export const colors = {
   },
   accent: {
     blue: "#1B5CFF",
+    blue_shade: "#0B4AE8",
     red: "#FF4658",
     yellow: "#FFBA00",
   },
@@ -22,7 +24,7 @@ export const colors = {
 const extraLarge_22 = (...args) => css`
   line-height: 35px;
   font-size: 22px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   ${css(...args)};
 `;
 
@@ -38,19 +40,19 @@ const medium_16 = (...args) => css`
 
 const small_14 = (...args) => css`
   font-size: 14px;
-  letter-spacing: 1%;
+  letter-spacing: 0.01em;
   line-height: 20px;
   ${css(...args)};
 `;
 
 const extraSmall_12 = (...args) => css`
   font-size: 12px;
-  letter-spacing: 1%;
+  letter-spacing: 0.01em;
   line-height: 16px;
   ${css(...args)};
 `;
 
-export const bodyStlyes = {
+export const bodyStyles = {
   extraLarge_22: {
     extraBold: extraLarge_22`
         font-family: "Gilroy-ExtraBold";
@@ -71,7 +73,7 @@ export const bodyStlyes = {
     `,
     regular: large_18`
         font-family: "Gilroy-Regular";
-        letter-spacing: 1%;
+        letter-spacing: 0.01em;
         line-height: 26px;
     `,
   },
@@ -81,6 +83,9 @@ export const bodyStlyes = {
     `,
     semiBold: medium_16`
         font-family: "Gilroy-SemiBold";
+    `,
+    medium: medium_16`
+        font-family: "Gilroy-Medium";
     `,
     regular: medium_16`
         font-family: "Gilroy-Regular";
@@ -110,3 +115,10 @@ export const bodyStlyes = {
     `,
   },
 };
+
+export const headerStyles = {
+  h1: css`
+    font-size: 50px;
+    font-family: "Gilroy-ExtraBold";
+  `
+}

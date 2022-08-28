@@ -33,6 +33,11 @@
   src: url("./fonts/Gilroy-Black.ttf");
 }
 
+@font-face {
+  font-family: 'DancingScript-Medium';
+  src: url("./fonts/DancingScript-Medium.ttf");
+}
+
 html, body, .App{
   background: #141417;
   margin: 0;
