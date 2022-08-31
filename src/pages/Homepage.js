@@ -1,12 +1,18 @@
+import React, { useRef } from "react";
 import * as UI from "./HomepageUI";
 import { SelectIcon, EditIcon, ApplyIcon } from "../components/Icons";
 import StepLayout from "../components/StepLayout";
 import leftimg from "../assets/Left.svg";
 import rightimg from "../assets/Right.svg";
 import Filter from "../components/Filter/Filter";
-import TvIcon from "../components/Icons/AnimatedIcon/TvIcon";
+import IconBox from "../components/IconBox";
+import downloadSvg from "svg-crowbar";
+import icons from "../components/Icons/AnimatedIcon/icons";
 
-const Homepage = () => {
+function Homepage() {
+  console.log(icons);
+
+  const iconRef = useRef(null);
   const steps = [
     {
       title: "Select",
@@ -24,6 +30,13 @@ const Homepage = () => {
       icon: <ApplyIcon />,
     },
   ];
+
+  const download = (name) => {
+    downloadSvg(iconRef.current, name, {
+      css: "none",
+    });
+    console.log(iconRef.current);
+  };
 
   return (
     <>
@@ -52,12 +65,21 @@ const Homepage = () => {
         </UI.StepsContainer>
 
         <Filter />
-        <div className="icon-wrapper">
-          <TvIcon viewBox="-48 -48 120 120" width="120" />
-        </div>
+        <UI.IconsWrapper>
+          {icons.map((element, index) => (
+            <IconBox key={index} onClick={() => download(element.name)}>
+              {React.createElement(element.icon, {
+                viewBox: "-48 -36 120 120",
+                width: "140",
+                ref: iconRef,
+              })}
+              <UI.Name className="icon-name">{element.name}</UI.Name>
+            </IconBox>
+          ))}
+        </UI.IconsWrapper>
       </UI.Container>
     </>
   );
-};
+}
 
 export default Homepage;

@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   margin-top: 70px;
+  margin-bottom: 140px;
   @media screen and (max-width: 420px) {
     margin-top: 40px;
   }
@@ -82,7 +83,7 @@ export const StepsContainer = styled.div`
 
 export const Image = styled.img`
   position: absolute;
-
+display: none;
   &.left {
     max-width: 508px;
     right: 870px;
@@ -97,4 +98,18 @@ export const Image = styled.img`
   @media screen and (max-width: 1050px) {
     display: none;
   }
+`;
+
+export const IconsWrapper = styled.div`
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
+  margin-top: 40px;
+`;
+
+export const Name = styled.div`
+  ${bodyStyles.small_14.regular};
+  color: ${colors.neutral.light_50};
+  grid-area: 1 / 1 / 2 / 2;
+  margin-top: 75px;
 `;

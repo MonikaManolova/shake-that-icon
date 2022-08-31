@@ -5,7 +5,7 @@ export const colors = {
     black_100: "#141417",
     black_95: "#18191C",
     black_90: "#1e2023",
-    black_80: "#2A2C31",
+    black_80: "#282B2F",
     light_50: "#8E8F91",
     light_40: "#A5A6A7",
     light_30: "#C4C6C8",

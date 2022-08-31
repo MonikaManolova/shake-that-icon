@@ -4,7 +4,7 @@ import { Form, InputGroup } from "react-bootstrap";
 
 export const Container = styled(InputGroup)`
   margin-top: 80px;
-  border: 1px solid ${colors.neutral.black_90};
+  border: 1px solid ${colors.neutral.black_80};
   border-radius: 10px;
 `;
 
@@ -12,7 +12,7 @@ export const StyledDropdown = styled.a`
   position: relative;
   width: 190px;
   padding: 18px 16px;
-  background: ${colors.neutral.black_90};
+  background: ${colors.neutral.black_80};
   border-radius: 10px 0px 0px 10px;
   text-decoration: none;
   color: ${colors.neutral.white} !important;
@@ -61,7 +61,7 @@ export const SearchWrapper = styled.div`
 export const Input = styled(Form.Control)`
   padding: 18px 24px;
   border: none;
-  background: ${colors.neutral.black_95} !important;
+  background: ${colors.neutral.black_90} !important;
   box-shadow: none !important;
   border-radius: 0px 10px 10px 0px;
   color: ${colors.neutral.white} !important;
@@ -74,7 +74,7 @@ export const Input = styled(Form.Control)`
 `;
 
 export const Icon = styled(InputGroup.Text)`
-  background: ${colors.neutral.black_95} !important;
+  background: ${colors.neutral.black_90} !important;
   border: none;
   padding: 0;
   padding-left: 24px;

@@ -44,6 +44,10 @@ html, body, .App{
   padding: 0;
 }
 
+.App{
+  overflow: hidden;
+}
+
 body {
   font-family: 'Gilroy-Regular';
   -webkit-font-smoothing: antialiased;

@@ -1,10 +1,11 @@
-const TvIcon = (props) => (
+import { forwardRef } from "react";
+const TvIcon = forwardRef((props, ref) => (
   <svg
     id="elt0rkExBYi1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     width="24"
-    heigt="24"
+    ref={ref}
     {...props}
   >
     <style>
@@ -194,6 +195,6 @@ const TvIcon = (props) => (
       fill="white"
     />
   </svg>
-);
+));
 
 export default TvIcon;
