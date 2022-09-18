@@ -5,4 +5,9 @@ export { default as GridIcon } from "./GridIcon";
 export { default as ArrowDownIcon } from "./ArrowDownIcon";
 export { default as SearchIcon } from "./SearchIcon";
 export { default as CloseIcon } from "./CloseIcon";
-
+export { default as MoonIcon } from "./MoonIcon";
+export { default as PlusIcon } from "./PlusIcon";
+export { default as MinusIcon } from "./MinusIcon";
+export { default as CopyIcon } from "./CopyIcon";
+export { default as CheckIcon } from "./CheckIcon";
+export { default as TrashIcon } from "./TrashIcon";

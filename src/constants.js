@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { SelectIcon, EditIcon, ApplyIcon } from "./components/Icons";
 
 export const colors = {
   neutral: {
@@ -120,5 +121,38 @@ export const headerStyles = {
   h1: css`
     font-size: 50px;
     font-family: "Gilroy-ExtraBold";
-  `
-}
+  `,
+};
+
+export const steps = [
+  {
+    title: "Select",
+    info: "You can choose between 30+ animated icons, ready to use.",
+    icon: <SelectIcon />,
+  },
+  {
+    title: "Edit",
+    info: "Adjust icon properties and animation with the help of Editor.",
+    icon: <EditIcon />,
+  },
+  {
+    title: "Apply",
+    info: "Download in various of animated or static formats.",
+    icon: <ApplyIcon />,
+  },
+];
+
+export const categories = [
+  "All Icons",
+  "Arrows",
+  "Actions",
+  "Commerce",
+  "Communications",
+  "Data",
+  "Devices",
+  "Geo",
+  "Media",
+  "Real World",
+  "Shapes",
+  "Weather",
+];

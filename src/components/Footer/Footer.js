@@ -9,7 +9,7 @@ const Footer = () => {
           <span className="mx-2 line">|</span>
           <div>
             Made possible with the help of
-            <UI.Link className="ms-1 me-0">Feather Icons</UI.Link>.
+            <UI.Link href="https://feathericons.com/" target="_blank" className="ms-1 me-0">Feather Icons</UI.Link>.
           </div>
         </UI.ItemsLeftWrapper>
         <UI.HR />

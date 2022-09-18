@@ -3,6 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as CoffeeIcon } from "../../assets/coffeeIcon.svg";
 import { ReactComponent as MenuIcon } from "../../assets/menuIcon.svg";
+import { ReactComponent as ManikinIcon } from "../../assets/manikin.svg";
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
       <HeaderUI.StyledContainer>
         <Navbar.Brand className="p-0 m-0" href="">
           <Logo />
+          <ManikinIcon/>
         </Navbar.Brand>
         <Navbar.Toggle className="border-0" aria-controls="navbarScroll">
           <MenuIcon />

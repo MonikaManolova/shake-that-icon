@@ -1,8 +1,6 @@
-<svg cache-id="3c17e7f07b2a474f85b68d9a510a682a" id="e8BioH2vUWx1" xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-134 0 174 24" shape-rendering="geometricPrecision"
-    text-rendering="geometricPrecision">
-    <g transform="translate(3-3)">
-        <path id="e8BioH2vUWx3" d="M9,18l6-6L9,6" transform="matrix(0 1-1 0 21 3)" fill="none" stroke="#ffffff"
+<svg id="epuaQlcwEVJ1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+    <g transform="translate(81 10)">
+        <path id="epuaQlcwEVJ3" d="M9,18l6-6L9,6" transform="matrix(0 1-1 0 21 3)" fill="none" stroke="#000"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="20" />
     </g>
 </svg>

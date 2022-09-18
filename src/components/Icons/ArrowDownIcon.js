@@ -32,12 +32,12 @@ const ArrowDownIcon = ({ ...props }) => {
     })(
       "91c80d77",
       {
-        root: "e8BioH2vUWx1",
+        root: "epuaQlcwEVJ1",
         version: "2022-05-04",
         animations: [
           {
             elements: {
-              e8BioH2vUWx3: {
+              epuaQlcwEVJ3: {
                 d: [
                   {
                     t: 0,
@@ -66,11 +66,11 @@ const ArrowDownIcon = ({ ...props }) => {
                 },
               },
             },
-            s: "MDFA1MmE0NGI4ZPDllWDliOGE5JZDkyOTg5NzRSiNjM2MDVmNTRk1NTRiOGQ5MRjliOGU4YzlkPOTI5ODk3NGIA2MzVhRjU1NGMI5MjlkOGU5YDjhhOWQ5Mjk4HOTc5YzRiWDYLzNWE1NTRiOGUY5Mjk1OTU0YHjYzNWE1NTRiHOGE5NTlkOGUV5Yjk3OGE5ZDYhlNGI2M1U4ZSjhhOTU5YzhlGNTU0YjljOTkC4ZThlRDhkUDFRiNjM1YWE2",
+            s: "MDEA1MmMyNjlhYEmJjQWI5YThiLYmIwYjZSYjUX2OTgxN2VHN2GQ3NzczNjlhYCmIwYjlhY2FhUYmJiMGI2T2IX1Njk4MTc4UDNczNjliMGJiYUWNiOWE4YmJRVYjBiNmI1YmEK2OTgxNzg3M1WU2OWFkYjBiMG2IzNjk4MTc4JNzM2OWE4YjNMiYmFjYjliNWEE4YmJhYzY5OIDFhZFdhOGIzOYmFhYzczNjlGiYWI3YWNhY1YNhYjY5UjgxNLzhjNA|",
           },
         ],
         options:
-          "MDFAyMDgyMjk3YNTdiNjg3OTdiBMjlQNDEyOTZKmNzZSN2Q2YzLc5MjkzMzI5NPmZRNzY3ZDZjQNzkyOVE0MTIC5NzU3Njc1VDMZjMjk4NEU/",
+          "MDNAyMDgyMjk3YXTdiNjg3OTdiYMjk0MTI5NmYW3NjdkNmNDNzWkyOTMzRzI5NTmY3NjdkNmNLMNzkyOTQxMjkE3NTc2NzVYNmJMyOTg0",
       },
       "https://cdn.svgator.com/ply/",
       "__SVGATOR_PLAYER__",

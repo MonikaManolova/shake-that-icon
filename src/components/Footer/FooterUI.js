@@ -3,7 +3,8 @@ import { colors, bodyStyles } from "../../constants";
 
 export const Container = styled.div`
   background: ${colors.neutral.black_95};
-  /* position: fixed; */
+  /* position: sticky;
+  bottom: 0; */
   bottom: 0;
   width: 100%;
 `;
@@ -90,12 +91,12 @@ export const Soon = styled.span`
 `;
 
 export const HR = styled.div`
-    width: 100%;
-    height: .2px;
-    margin-bottom: 10px;
-    box-shadow: 0 0.5px 0 ${colors.neutral.light_50};
-    display: none;
-    @media screen and (max-width: 650px) {
-        display: block;
-    }
-`
+  width: 100%;
+  height: 0.2px;
+  margin-bottom: 10px;
+  box-shadow: 0 0.5px 0 ${colors.neutral.light_50};
+  display: none;
+  @media screen and (max-width: 650px) {
+    display: block;
+  }
+`;

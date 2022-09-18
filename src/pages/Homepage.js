@@ -1,48 +1,47 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import * as UI from "./HomepageUI";
-import { SelectIcon, EditIcon, ApplyIcon } from "../components/Icons";
+import { steps } from "../constants";
 import StepLayout from "../components/StepLayout";
 import leftimg from "../assets/Left.svg";
 import rightimg from "../assets/Right.svg";
+import bgElements from "../assets/bg-elements.svg";
 import Filter from "../components/Filter/Filter";
 import IconBox from "../components/IconBox";
-import downloadSvg from "svg-crowbar";
-import icons from "../components/Icons/AnimatedIcon/icons";
+import Modal from "../components/Modal/Modal";
+import iconsData from "../components/Icons/iconsData";
 
 function Homepage() {
-  console.log(icons);
+  const [isOpened, setIsOpened] = useState(false);
+  const [icon, setIcon] = useState({});
+  const [filteredData, setFilteredData] = useState(iconsData);
 
-  const iconRef = useRef(null);
-  const steps = [
-    {
-      title: "Select",
-      info: "You can choose between 30+ animated icons, ready to use.",
-      icon: <SelectIcon />,
-    },
-    {
-      title: "Edit",
-      info: "Adjust icon properties and animation with the help of Editor.",
-      icon: <EditIcon />,
-    },
-    {
-      title: "Apply",
-      info: "Download in various of animated or static formats.",
-      icon: <ApplyIcon />,
-    },
-  ];
+  const itemsRef = useRef(null);
 
-  const download = (name) => {
-    downloadSvg(iconRef.current, name, {
-      css: "none",
+  const handleFilter = (value) => {
+    const filteredData = iconsData.filter((element) => {
+      return element.name.includes(value);
     });
-    console.log(iconRef.current);
+    setFilteredData(filteredData);
+  };
+
+  const filterByCategory = (category) => {
+    const filteredData =
+      category !== "All Icons"
+        ? iconsData.filter((element) => {
+            return element.category === category;
+          })
+        : iconsData;
+    setFilteredData(filteredData || iconsData);
   };
 
   return (
     <>
+      <Modal isOpened={isOpened} setIsOpened={setIsOpened} icon={icon} />
       <UI.Container>
-        <UI.Image className="right" src={rightimg} alt="bg-elment" />
-        <UI.Image className="left" src={leftimg} alt="bg-elment" />
+        {/* <UI.Image className="right" src={rightimg} alt="bg-elment" /> */}
+        {/* <UI.Image className="left" src={leftimg} alt="bg-elment" /> */}
+        <UI.Image className="bg" src={bgElements} alt="bg-element" />
+
         <UI.HeaderWrapper>
           <UI.Header>Shake your project with Shaking Icons</UI.Header>
           <UI.SubHeader>
@@ -50,7 +49,9 @@ function Homepage() {
             that you can integrate into your project as simple as{" "}
             <span>copy -{">"} paste</span>.
           </UI.SubHeader>
-          <UI.StyledButton>Explore Animations</UI.StyledButton>
+          <UI.StyledButton onClick={() => itemsRef.current.scrollIntoView()}>
+            Explore Animations
+          </UI.StyledButton>
         </UI.HeaderWrapper>
         <UI.StepsContainer className="d-flex justify-content-center">
           {steps.map((step, index) => (
@@ -64,15 +65,32 @@ function Homepage() {
           ))}
         </UI.StepsContainer>
 
-        <Filter />
+        <UI.FilterWrapper ref={itemsRef}>
+          <Filter
+            filterByCategory={filterByCategory}
+            handleFilter={handleFilter}
+          />
+        </UI.FilterWrapper>
         <UI.IconsWrapper>
-          {icons.map((element, index) => (
-            <IconBox key={index} onClick={() => download(element.name)}>
-              {React.createElement(element.icon, {
-                viewBox: "-48 -36 120 120",
-                width: "140",
-                ref: iconRef,
-              })}
+          {filteredData.map((element, index) => (
+            <IconBox
+              key={index}
+              onClick={() => {
+                setIsOpened(true);
+                setIcon({ element: element.icon, name: element.name });
+              }}
+            >
+              {React.createElement(
+                !isOpened ? element.icon : element.staticIcon,
+                {
+                  viewBox: "-48 -36 120 120",
+                  size: "140",
+                  event: ":hover",
+                  // ref: (element) => iconRef.current.push(element),
+                  is_animated: "true",
+                  iteration_count: "infinite",
+                }
+              )}
               <UI.Name className="icon-name">{element.name}</UI.Name>
             </IconBox>
           ))}

@@ -4,11 +4,9 @@ import { Button } from "react-bootstrap";
 
 export const Container = styled.div`
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 70px auto;
   align-items: center;
   position: relative;
-  margin-top: 70px;
-  margin-bottom: 140px;
   @media screen and (max-width: 420px) {
     margin-top: 40px;
   }
@@ -83,7 +81,13 @@ export const StepsContainer = styled.div`
 
 export const Image = styled.img`
   position: absolute;
-display: none;
+  /* display: none; */
+  &.bg {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 66px;
+    /* top: 80px; */
+  }
   &.left {
     max-width: 508px;
     right: 870px;
@@ -100,11 +104,30 @@ display: none;
   }
 `;
 
+export const FilterWrapper = styled.div`
+  color: ${colors.neutral.black_100};
+  padding: 20px 0;
+  margin-top: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: ${colors.neutral.black_100};
+`;
+
 export const IconsWrapper = styled.div`
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
-  margin-top: 40px;
+  margin-top: 20px;
+  @media screen and (max-width: 1300px) {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  @media screen and (max-width: 420px) {
+    margin: 0 20px;
+    margin-top: 0px;
+  }
 `;
 
 export const Name = styled.div`

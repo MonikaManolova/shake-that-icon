@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import * as UI from "./FilterUI";
 import { Dropdown } from "react-bootstrap";
 import { ArrowDownIcon, GridIcon, SearchIcon, CloseIcon } from "../Icons";
+import { categories } from "../../constants";
 
-const Filter = () => {
+const Filter = ({ handleFilter, filterByCategory }) => {
   const [isInputActive, setIsInputActive] = useState(false);
   const [value, setValue] = useState("");
+  const [category, setCategory] = useState("All Icons");
 
   const clear = () => {
     setValue("");
     setIsInputActive(false);
+    handleFilter("");
   };
 
   //TOGGLE DROPDOWN * * * * *
@@ -30,26 +33,39 @@ const Filter = () => {
   //TOGGLE DROPDOWN MENU * * * * *
   const CustomMenu = React.forwardRef(({ children, style, className }, ref) => {
     return (
-      <div ref={ref} style={style} className={className}>
+      <UI.Menu ref={ref} style={style} className={className}>
         <ul className="list-unstyled">{children}</ul>
-      </div>
+      </UI.Menu>
     );
   });
 
   return (
-    <UI.Container className="mb-3">
+    <UI.Container className="d-flex">
       <Dropdown>
         <Dropdown.Toggle as={CustomToggle} id="ropdown-custom-components">
           <GridIcon className="gridIcon" />
-          All Icons
-          <ArrowDownIcon className="arrowIcon" />
+          {category}
+          <ArrowDownIcon
+            viewBox="-20 0 100 50"
+            width="100px"
+            height="42px"
+            className="arrowIcon"
+          />
         </Dropdown.Toggle>
         <Dropdown.Menu as={CustomMenu}>
-          <Dropdown.Item href="#">Action</Dropdown.Item>
-          <Dropdown.Item href="#">Another action</Dropdown.Item>
-          <Dropdown.Item href="#">Something else here</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item href="#">Separated link</Dropdown.Item>
+          {categories.map((cat, index) => (
+            <UI.Item
+              active={cat === category}
+              onClick={() => {
+                setCategory(cat);
+                filterByCategory(cat);
+              }}
+              key={index}
+              href="#"
+            >
+              {cat}
+            </UI.Item>
+          ))}
         </Dropdown.Menu>
       </Dropdown>
       <UI.SearchWrapper className="d-flex">
@@ -65,12 +81,13 @@ const Filter = () => {
           aria-label="Text input with dropdown button"
           onFocus={() => setIsInputActive(true)}
           onBlur={() => !value && setIsInputActive(false)}
-          onChange={(e) => setValue(e.target.value)}
+          onChange={(e) => {
+            setValue(e.target.value);
+            handleFilter(e.target.value);
+          }}
           value={value}
         />
-        {!!value && (
-          <CloseIcon onClick={clear} className="closeIcon" />
-        )}
+        {!!value && <CloseIcon onClick={clear} className="closeIcon" />}
       </UI.SearchWrapper>
     </UI.Container>
   );
