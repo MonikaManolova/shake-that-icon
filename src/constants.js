@@ -122,6 +122,10 @@ export const headerStyles = {
     font-size: 50px;
     font-family: "Gilroy-ExtraBold";
   `,
+  h4: css`
+    font-size: 32px;
+    font-family: "Gilroy-ExtraBold";
+  `
 };
 
 export const steps = [

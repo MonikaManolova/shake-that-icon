@@ -3,8 +3,7 @@ import { colors, bodyStyles } from "../../constants";
 
 export const Container = styled.div`
   background: ${colors.neutral.black_95};
-  /* position: sticky;
-  bottom: 0; */
+  position: absolute;
   bottom: 0;
   width: 100%;
 `;

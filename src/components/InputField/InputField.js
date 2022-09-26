@@ -2,16 +2,7 @@ import { MinusIcon, PlusIcon } from "../Icons";
 import * as UI from "./InputFieldUI";
 import Label from "../Label";
 
-const InputField = ({
-  decreaseTimes,
-  increaseTimes,
-  value,
-  disabled,
-  label,
-  onChange,
-  editable,
-  ...props
-}) => {
+const InputField = ({ decreaseTimes, increaseTimes, value, disabled, label, onChange, editable, ...props }) => {
   return (
     <UI.Wrapper {...props}>
       <Label>{label}</Label>
@@ -24,15 +15,13 @@ const InputField = ({
           <UI.Input
             type="text"
             value={value}
-            aria-label="Username"
             onChange={onChange}
             style={{ pointerEvents: editable ? "all" : "none" }}
             readOnly={!editable}
           />
-          {/* <UI.Label>{label}</UI.Label> */}
         </div>
 
-        <UI.Indicator onClick={increaseTimes} id="basic-addon1">
+        <UI.Indicator onClick={increaseTimes}>
           <PlusIcon />
         </UI.Indicator>
       </UI.InputWrapper>
@@ -41,3 +30,5 @@ const InputField = ({
 };
 
 export default InputField;
+
+

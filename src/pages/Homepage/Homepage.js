@@ -1,16 +1,14 @@
 import React, { useRef, useState } from "react";
 import * as UI from "./HomepageUI";
-import { steps } from "../constants";
-import StepLayout from "../components/StepLayout";
-import leftimg from "../assets/Left.svg";
-import rightimg from "../assets/Right.svg";
-import bgElements from "../assets/bg-elements.svg";
-import Filter from "../components/Filter/Filter";
-import IconBox from "../components/IconBox";
-import Modal from "../components/Modal/Modal";
-import iconsData from "../components/Icons/iconsData";
+import { steps } from "../../constants";
+import StepLayout from "../../components/StepLayout";
+import bgElements from "../../assets/bg-elements.svg";
+import Filter from "../../components/Filter/Filter";
+import IconBox from "../../components/IconBox";
+import Modal from "../../components/Modal/Modal";
+import iconsData from "../../components/Icons/iconsData";
 
-function Homepage() {
+const Homepage = () => {
   const [isOpened, setIsOpened] = useState(false);
   const [icon, setIcon] = useState({});
   const [filteredData, setFilteredData] = useState(iconsData);
@@ -38,8 +36,6 @@ function Homepage() {
     <>
       <Modal isOpened={isOpened} setIsOpened={setIsOpened} icon={icon} />
       <UI.Container>
-        {/* <UI.Image className="right" src={rightimg} alt="bg-elment" /> */}
-        {/* <UI.Image className="left" src={leftimg} alt="bg-elment" /> */}
         <UI.Image className="bg" src={bgElements} alt="bg-element" />
 
         <UI.HeaderWrapper>
@@ -86,7 +82,6 @@ function Homepage() {
                   viewBox: "-48 -36 120 120",
                   size: "140",
                   event: ":hover",
-                  // ref: (element) => iconRef.current.push(element),
                   is_animated: "true",
                   iteration_count: "infinite",
                 }
@@ -98,6 +93,6 @@ function Homepage() {
       </UI.Container>
     </>
   );
-}
+};
 
 export default Homepage;

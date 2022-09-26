@@ -29,8 +29,8 @@ export const StyledButton = styled(Button)`
 
 const CopyButton = (props) => {
   const [isClicked, setIsClicked] = useState(false);
+  
   const copyCode = () => {
-    console.log(props.svg.current.outerHTML);
     copy(props.svg.current && props.svg.current.outerHTML);
     setIsClicked(true);
   };

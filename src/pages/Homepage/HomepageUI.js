@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { colors, headerStyles, bodyStyles } from "../constants";
+import { colors, headerStyles, bodyStyles } from "../../constants";
 import { Button } from "react-bootstrap";
 
 export const Container = styled.div`
   max-width: 1240px;
   margin: 70px auto;
+  margin-bottom: 0;
+  padding-bottom: 140px;
   align-items: center;
   position: relative;
   @media screen and (max-width: 420px) {

@@ -45,7 +45,8 @@ html, body, .App{
 }
 
 .App{
-  /* overflow: hidden; */
+  min-height: 100vh;
+  position: relative;
 }
 
 body {

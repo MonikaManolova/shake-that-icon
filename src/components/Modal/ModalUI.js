@@ -136,10 +136,8 @@ export const HeaderSmall = styled.div`
 
 export const OptionsWrapper = styled.div`
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
   grid-gap: 10px;
-  /* margin-top: 14px; */
 `;
 
 export const Option = styled.div`

@@ -1,0 +1,573 @@
+<svg id="ep5Es3tc4kI1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 26" width="154">
+    <style>
+        #ep5Es3tc4kI4_to {
+            animation: ep5Es3tc4kI4_to__to 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI4_to__to {
+            0% {
+                transform: translate(12px, 12px)
+            }
+
+            7.804878% {
+                transform: translate(12px, 12px)
+            }
+
+            9.756098% {
+                transform: translate(12px, 10.89px)
+            }
+
+            12.926829% {
+                transform: translate(12px, 12px)
+            }
+
+            32.195122% {
+                transform: translate(12px, 12px)
+            }
+
+            34.146341% {
+                transform: translate(12px, 10.89px)
+            }
+
+            37.317073% {
+                transform: translate(12px, 12px)
+            }
+
+            55.853659% {
+                transform: translate(12px, 12px)
+            }
+
+            57.804878% {
+                transform: translate(12px, 10.89px)
+            }
+
+            60.97561% {
+                transform: translate(12px, 12px)
+            }
+
+            100% {
+                transform: translate(12px, 12px)
+            }
+        }
+
+        #ep5Es3tc4kI5_to {
+            animation: ep5Es3tc4kI5_to__to 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI5_to__to {
+            0% {
+                transform: translate(18.5px, 21.969531px)
+            }
+
+            60% {
+                transform: translate(18.5px, 21.969531px)
+            }
+
+            63.170732% {
+                transform: translate(10.5px, 20.969531px)
+            }
+
+            65.609756% {
+                transform: translate(3.5px, 19.969531px)
+            }
+
+            68.292683% {
+                transform: translate(-1.5px, 21.969531px)
+            }
+
+            74.634146% {
+                transform: translate(-21.5px, 21.969531px)
+            }
+
+            81.707317% {
+                transform: translate(-21.5px, 21.969531px)
+            }
+
+            88.04878% {
+                transform: translate(-1.5px, 21.969531px)
+            }
+
+            90.731707% {
+                transform: translate(3.5px, 19.969531px)
+            }
+
+            93.170732% {
+                transform: translate(10.5px, 20.969531px)
+            }
+
+            96.341463% {
+                transform: translate(18.5px, 21.969531px)
+            }
+
+            100% {
+                transform: translate(18.5px, 21.969531px)
+            }
+        }
+
+        #ep5Es3tc4kI5_ts {
+            animation: ep5Es3tc4kI5_ts__ts 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI5_ts__ts {
+            0% {
+                transform: scale(1, 1)
+            }
+
+            4.878049% {
+                transform: scale(1, 0.752086)
+            }
+
+            8.04878% {
+                transform: scale(1, 1.11)
+            }
+
+            9.756098% {
+                transform: scale(1, 1.11)
+            }
+
+            14.146341% {
+                transform: scale(1, 0.752086)
+            }
+
+            17.560976% {
+                transform: scale(1, 1)
+            }
+
+            24.390244% {
+                transform: scale(1, 1)
+            }
+
+            29.268293% {
+                transform: scale(1, 0.752086)
+            }
+
+            32.439024% {
+                transform: scale(1, 1.11)
+            }
+
+            34.146341% {
+                transform: scale(1, 1.11)
+            }
+
+            38.536585% {
+                transform: scale(1, 0.752086)
+            }
+
+            41.95122% {
+                transform: scale(1, 1)
+            }
+
+            48.04878% {
+                transform: scale(1, 1)
+            }
+
+            52.926829% {
+                transform: scale(1, 0.752086)
+            }
+
+            56.097561% {
+                transform: scale(1, 1.11)
+            }
+
+            57.804878% {
+                transform: scale(1, 1.11)
+            }
+
+            60% {
+                transform: scale(1, 0.931043)
+            }
+
+            62.926829% {
+                transform: scale(1, 0.752086)
+            }
+
+            66.341463% {
+                transform: scale(1, 1)
+            }
+
+            100% {
+                transform: scale(1, 1)
+            }
+        }
+
+        #ep5Es3tc4kI5 {
+            animation: ep5Es3tc4kI5_c_o 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI5_c_o {
+            0% {
+                opacity: 1
+            }
+
+            71.463415% {
+                opacity: 1
+            }
+
+            72.682927% {
+                opacity: 0
+            }
+
+            83.414634% {
+                opacity: 0
+            }
+
+            84.634146% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #ep5Es3tc4kI6_to {
+            animation: ep5Es3tc4kI6_to__to 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI6_to__to {
+            0% {
+                transform: translate(5.5px, 22.009451px)
+            }
+
+            60% {
+                transform: translate(5.5px, 22.009451px)
+            }
+
+            63.170732% {
+                transform: translate(0.083333px, 20.009451px)
+            }
+
+            66.097561% {
+                transform: translate(-4.25px, 23.152308px)
+            }
+
+            68.292683% {
+                transform: translate(-7.5px, 22.009451px)
+            }
+
+            74.634146% {
+                transform: translate(-17.5px, 22.009451px)
+            }
+
+            81.707317% {
+                transform: translate(-17.5px, 22.009451px)
+            }
+
+            88.04878% {
+                transform: translate(-7.5px, 22.009451px)
+            }
+
+            90.243902% {
+                transform: translate(-4.25px, 23.152308px)
+            }
+
+            93.170732% {
+                transform: translate(0.083333px, 20.009451px)
+            }
+
+            96.341463% {
+                transform: translate(5.5px, 22.009451px)
+            }
+
+            100% {
+                transform: translate(5.5px, 22.009451px)
+            }
+        }
+
+        #ep5Es3tc4kI6_ts {
+            animation: ep5Es3tc4kI6_ts__ts 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI6_ts__ts {
+            0% {
+                transform: scale(1, 1)
+            }
+
+            4.878049% {
+                transform: scale(1, 0.752086)
+            }
+
+            8.04878% {
+                transform: scale(1, 1.11)
+            }
+
+            9.756098% {
+                transform: scale(1, 1.11)
+            }
+
+            14.146341% {
+                transform: scale(1, 0.752086)
+            }
+
+            17.560976% {
+                transform: scale(1, 1)
+            }
+
+            24.390244% {
+                transform: scale(1, 1)
+            }
+
+            29.268293% {
+                transform: scale(1, 0.752086)
+            }
+
+            32.439024% {
+                transform: scale(1, 1.11)
+            }
+
+            34.146341% {
+                transform: scale(1, 1.11)
+            }
+
+            38.536585% {
+                transform: scale(1, 0.752086)
+            }
+
+            41.95122% {
+                transform: scale(1, 1)
+            }
+
+            48.04878% {
+                transform: scale(1, 1)
+            }
+
+            52.926829% {
+                transform: scale(1, 0.752086)
+            }
+
+            56.097561% {
+                transform: scale(1, 1.11)
+            }
+
+            57.804878% {
+                transform: scale(1, 1.11)
+            }
+
+            60% {
+                transform: scale(1, 0.931043)
+            }
+
+            62.926829% {
+                transform: scale(1, 0.752086)
+            }
+
+            66.341463% {
+                transform: scale(1, 1)
+            }
+
+            100% {
+                transform: scale(1, 1)
+            }
+        }
+
+        #ep5Es3tc4kI6 {
+            animation: ep5Es3tc4kI6_c_o 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI6_c_o {
+            0% {
+                opacity: 1
+            }
+
+            72.682927% {
+                opacity: 1
+            }
+
+            73.902439% {
+                opacity: 0
+            }
+
+            83.414634% {
+                opacity: 0
+            }
+
+            84.634146% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #ep5Es3tc4kI7_to {
+            animation: ep5Es3tc4kI7_to__to 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI7_to__to {
+            0% {
+                transform: translate(12px, 9.5px)
+            }
+
+            4.878049% {
+                transform: translate(12px, 10.5px)
+            }
+
+            8.04878% {
+                transform: translate(12px, 8.6px)
+            }
+
+            9.756098% {
+                transform: translate(12px, 8.6px)
+            }
+
+            14.146341% {
+                transform: translate(12px, 10.5px)
+            }
+
+            17.560976% {
+                transform: translate(12px, 9.5px)
+            }
+
+            24.390244% {
+                transform: translate(12px, 9.5px)
+            }
+
+            29.268293% {
+                transform: translate(12px, 10.5px)
+            }
+
+            32.439024% {
+                transform: translate(12px, 8.6px)
+            }
+
+            34.146341% {
+                transform: translate(12px, 8.6px)
+            }
+
+            38.536585% {
+                transform: translate(12px, 10.5px)
+            }
+
+            41.95122% {
+                transform: translate(12px, 9.5px)
+            }
+
+            48.04878% {
+                transform: translate(12px, 9.5px)
+            }
+
+            52.926829% {
+                transform: translate(12px, 10.5px)
+            }
+
+            56.097561% {
+                transform: translate(12px, 8.6px)
+            }
+
+            57.804878% {
+                transform: translate(12px, 8.6px)
+            }
+
+            66.829268% {
+                transform: translate(12px, 13.5px)
+            }
+
+            69.02439% {
+                transform: translate(12px, 12.807692px)
+            }
+
+            72.195122% {
+                transform: translate(12px, 14.5px)
+            }
+
+            81.707317% {
+                transform: translate(12px, 14.5px)
+            }
+
+            84.878049% {
+                transform: translate(12px, 12.807692px)
+            }
+
+            87.073171% {
+                transform: translate(12px, 13.5px)
+            }
+
+            96.097561% {
+                transform: translate(12px, 8.6px)
+            }
+
+            99.268293% {
+                transform: translate(12px, 9.5px)
+            }
+
+            100% {
+                transform: translate(12px, 9.5px)
+            }
+        }
+
+        #ep5Es3tc4kI7_tr {
+            animation: ep5Es3tc4kI7_tr__tr 4100ms linear infinite normal forwards
+        }
+
+        @keyframes ep5Es3tc4kI7_tr__tr {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            64.146341% {
+                transform: rotate(0deg)
+            }
+
+            66.829268% {
+                transform: rotate(6.3303deg)
+            }
+
+            70% {
+                transform: rotate(0deg)
+            }
+
+            83.902439% {
+                transform: rotate(0deg)
+            }
+
+            87.073171% {
+                transform: rotate(6.3303deg)
+            }
+
+            89.756098% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(0deg)
+            }
+        }
+    </style>
+    <g transform="translate(-115.835327-137.699997)">
+        <g transform="translate(139.835325 138)">
+            <g id="ep5Es3tc4kI4_to" transform="translate(12,12)">
+                <g transform="translate(-12,-12)">
+                    <g id="ep5Es3tc4kI5_to" transform="translate(18.5,21.969531)">
+                        <g id="ep5Es3tc4kI5_ts" transform="scale(1,1)">
+                            <path id="ep5Es3tc4kI5"
+                                d="M18.5,21c1.3807,0,2.5-1.1193,2.5-2.5s-1.1193-2.5-2.5-2.5-2.5,1.1193-2.5,2.5s1.1193,2.5,2.5,2.5Z"
+                                transform="translate(-18.5,-21.969531)" fill="none" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </g>
+                    <g id="ep5Es3tc4kI6_to" transform="translate(5.5,22.009451)">
+                        <g id="ep5Es3tc4kI6_ts" transform="scale(1,1)">
+                            <path id="ep5Es3tc4kI6"
+                                d="M5.5,21C6.88071,21,8,19.8807,8,18.5s-1.11929-2.5-2.5-2.5-2.5,1.1193-2.5,2.5s1.11929,2.5,2.5,2.5Z"
+                                transform="translate(-5.5,-22.009451)" fill="none" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </g>
+                    <g id="ep5Es3tc4kI7_to" transform="translate(12,9.5)">
+                        <g id="ep5Es3tc4kI7_tr" transform="rotate(0)">
+                            <g transform="translate(-12,-9.5)">
+                                <path d="M16,8h4l3,3v5h-7v-8Z" fill="none" stroke="#ffffff" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16,3L1,3v13h15v-13Z" fill="none" stroke="#ffffff" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <line x1="-34.544679" y1="0" x2="34.54468" y2="0" transform="translate(151.835324 160)" fill="none"
+            stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+    </g>
+</svg>

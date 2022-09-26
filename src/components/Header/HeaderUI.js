@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors, bodyStyles } from "../../constants";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Container, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 export const StyledNavbar = styled(Navbar)`
   background: ${colors.neutral.black_100};
@@ -24,13 +25,14 @@ export const StyledContainer = styled(Container)`
   }
 `;
 
-export const NavItem = styled(Nav.Link)`
+export const NavItem = styled(NavLink)`
   ${bodyStyles.medium_16.semiBold};
   color: ${colors.neutral.light_40};
   padding-right: 30px !important;
   padding-left: 0 !important;
+  text-decoration: none;
 
-  &:hover {
+  &:hover, &.active {
     color: ${colors.neutral.white};
   }
 `;

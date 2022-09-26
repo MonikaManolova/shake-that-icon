@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   overflow: hidden;
   background: ${colors.neutral.black_95};
   border-radius: 8px;
-  border: 1px solid ${colors.neutral.black_90};
+  border: 1px solid ${colors.neutral.black_80};
   padding: 1rem;
   display: grid;
   place-items: center;

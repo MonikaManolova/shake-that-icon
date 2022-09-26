@@ -10,8 +10,6 @@ import CopyButton from "../CopyButton";
 import downloadSvg from "svg-crowbar";
 import { downloadPng } from "svg-crowbar";
 
-const saveSvgAsPng = require("save-svg-as-png");
-
 const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
   const iconRef = useRef(null);
   const hiddenIconRef = useRef(null);
@@ -28,6 +26,8 @@ const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
     option: options[0],
   });
 
+  const [times, setTimes] = useState(0);
+
   const [properties, setProperties] = useState({
     color: {
       r: "255",
@@ -39,8 +39,6 @@ const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
     size: 0,
     speed: 0,
   });
-
-  const [times, setTimes] = useState(0);
 
   const [theme, setTheme] = useState({
     name: "dark",
@@ -131,7 +129,7 @@ const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
     );
     setProperties({
       ...properties,
-      size: currentValue > 100 ? 100 : currentValue,
+      size: currentValue > 120 ? 120 : currentValue,
     });
   };
 
@@ -285,6 +283,7 @@ const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
                 })
               }
             />
+
             {/* STROKE WIDTH input * * ** * * */}
             <InputField
               style={{ margin: "0" }}
@@ -308,8 +307,8 @@ const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
             />
           </UI.PropertiesWrapper>
 
-          {/* SIZE input * * ** * * */}
           <UI.PropertiesWrapper className="gx-2">
+            {/* SIZE input * * ** * * */}
             <InputField
               style={{ margin: "0" }}
               decreaseTimes={() =>
@@ -320,7 +319,7 @@ const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
                 })
               }
               increaseTimes={() =>
-                properties.size < 100 &&
+                properties.size < 120 &&
                 setProperties({
                   ...properties,
                   size: properties.size + 1,
@@ -363,9 +362,6 @@ const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
           <Row gx={2} className="gx-2" style={{ marginTop: "14px" }}>
             <Col md={6}>
               <CopyButton svg={iconRef} />
-              {/* <UI.CopyButton className="d-flex align-items-center justify-content-center" onClick={() => copy(iconRef.current.outerHTML)}>
-                <CopyIcon/> Copy Code
-              </UI.CopyButton> */}
             </Col>
             <Col md={6}>
               <ButtonComponent onClick={() => download(iconRef)}>
@@ -382,9 +378,6 @@ const ModalComponent = ({ isOpened, setIsOpened, icon }) => {
             <Col md={6}>
               <ButtonComponent
                 onClick={() =>
-                  // saveSvgAsPng.saveSvgAsPng(hiddenIconRef.current, "hello", {
-                  //   scale: properties.size / 48 || 90 / 48,
-                  // }) OLD WAY OF SAVING
                   downloadPng(iconRef.current, icon.name, {
                     css: "none",
                     downloadPNGOptions: {
