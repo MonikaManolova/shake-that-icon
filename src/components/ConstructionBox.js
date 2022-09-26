@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   padding: 50px 80px;
+  min-width: 566px;
   border-radius: 10px;
   background: ${colors.neutral.black_95};
   border: 1px solid ${colors.neutral.black_80};
@@ -16,9 +17,19 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin: 140px auto;
   z-index: 1;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 1050px) {
+    min-width: 500px;
+    padding: 50px;
+  }
+  @media screen and (max-width: 540px) {
+    min-width: 100%;
+    padding: 40px 20px;
+  }
 `;
 
 const Header = styled.div`
@@ -39,6 +50,9 @@ const StyledBGImage = styled.img`
   left: 43%;
   transform: translateX(-50%);
   top: 90px;
+  @media screen and (max-width: 1050px) {
+    display: none;
+  }
 `;
 
 const ConstructionBox = () => {

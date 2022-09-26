@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors, headerStyles, bodyStyles } from "../../constants";
 import { Button } from "react-bootstrap";
+import bgElements from "../../assets/bg-elements.svg";
 
 export const Container = styled.div`
   max-width: 1240px;
@@ -11,6 +12,19 @@ export const Container = styled.div`
   position: relative;
   @media screen and (max-width: 420px) {
     margin-top: 40px;
+  }
+`;
+
+export const BGImage = styled.div`
+  width: 100%;
+  height: 377px;
+  position: absolute;
+  top: 216px;
+  background-image: url(${bgElements});
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (max-width: 1050px) {
+    display: none;
   }
 `;
 
@@ -81,30 +95,19 @@ export const StepsContainer = styled.div`
   }
 `;
 
-export const Image = styled.img`
-  position: absolute;
-  /* display: none; */
-  &.bg {
-    transform: translateX(-50%);
-    left: 50%;
-    top: 66px;
-    /* top: 80px; */
-  }
-  &.left {
-    max-width: 508px;
-    right: 870px;
-    top: 150px;
-  }
-  &.right {
-    max-width: 570px;
-    left: 820px;
-    top: 80px;
-  }
+// export const Image = styled.img`
+//   position: absolute;
 
-  @media screen and (max-width: 1050px) {
-    display: none;
-  }
-`;
+//   &.bg {
+//     transform: translateX(-50%);
+//     left: 50%;
+//     top: 66px;
+//   }
+
+//   @media screen and (max-width: 1050px) {
+//     display: none;
+//   }
+// `;
 
 export const FilterWrapper = styled.div`
   color: ${colors.neutral.black_100};

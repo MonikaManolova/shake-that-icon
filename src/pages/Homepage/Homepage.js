@@ -35,9 +35,9 @@ const Homepage = () => {
   return (
     <>
       <Modal isOpened={isOpened} setIsOpened={setIsOpened} icon={icon} />
+      <UI.BGImage></UI.BGImage>
       <UI.Container>
-        <UI.Image className="bg" src={bgElements} alt="bg-element" />
-
+        {/* <UI.Image className="bg" src={bgElements} alt="bg-element" /> */}
         <UI.HeaderWrapper>
           <UI.Header>Shake your project with Shaking Icons</UI.Header>
           <UI.SubHeader>
