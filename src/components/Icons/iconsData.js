@@ -73,8 +73,18 @@ import {
 
 const iconsData = [
   { icon: TvIcon, name: "TV", category: "Devices", staticIcon: TvIconStatic },
-  { icon: MailIcon, name: "mail", category: "", staticIcon: MailIconStatic },
-  { icon: GiftIcon, name: "gift", category: "Real World", staticIcon: GiftIconStatic },
+  {
+    icon: MailIcon,
+    name: "mail",
+    category: "Communications",
+    staticIcon: MailIconStatic,
+  },
+  {
+    icon: GiftIcon,
+    name: "gift",
+    category: "Real World",
+    staticIcon: GiftIconStatic,
+  },
   {
     icon: ThumbsDownIcon,
     name: "thumbs-down",
@@ -94,12 +104,18 @@ const iconsData = [
     staticIcon: CameraIconStatic,
   },
   {
-    icon: VolumeDownIcon,
-    name: "volume-off",
+    icon: RadioIcon,
+    name: "radio",
     category: "Media",
-    staticIcon: VolumeDownIconStatic,
+    staticIcon: RadioIconStatic,
   },
-  { icon: WatchIcon, name: "watch", category: "Devices", staticIcon: WatchIconStatic },
+
+  {
+    icon: WatchIcon,
+    name: "watch",
+    category: "Devices",
+    staticIcon: WatchIconStatic,
+  },
   {
     icon: CloudSnowIcon,
     name: "cloud-snow",
@@ -112,7 +128,12 @@ const iconsData = [
     category: "Data",
     staticIcon: ActivityIconStatic,
   },
-  { icon: FlagIcon, name: "flag", category: "Communications", staticIcon: FlagIconStatic },
+  {
+    icon: VolumeDownIcon,
+    name: "volume-off",
+    category: "Media",
+    staticIcon: VolumeDownIconStatic,
+  },
   {
     icon: MessageCircleIcon,
     name: "message-circle",
@@ -150,7 +171,12 @@ const iconsData = [
     category: "Real World",
     staticIcon: BookOpenIconStatic,
   },
-  { icon: TruckIcon, name: "truck", category: "Commerce", staticIcon: TruckIconStatic },
+  {
+    icon: TruckIcon,
+    name: "truck",
+    category: "Commerce",
+    staticIcon: TruckIconStatic,
+  },
   {
     icon: ThumbsUpIcon,
     name: "thumbs-up",
@@ -177,7 +203,12 @@ const iconsData = [
   },
   { icon: MicIcon, name: "mic", category: "Media", staticIcon: MicIconStatic },
   { icon: MapIcon, name: "map", category: "Geo", staticIcon: MapIconStatic },
-  { icon: HeartIcon, name: "heart", category: "Shapes", staticIcon: HeartIconStatic },
+  {
+    icon: HeartIcon,
+    name: "heart",
+    category: "Shapes",
+    staticIcon: HeartIconStatic,
+  },
   {
     icon: ChevronLeftIcon,
     name: "chevron-left",
@@ -190,8 +221,18 @@ const iconsData = [
     category: "Arrows",
     staticIcon: ChevronRightIconStatic,
   },
-  { icon: RadioIcon, name: "radio", category: "Media", staticIcon: RadioIconStatic },
-  { icon: BellIcon, name: "bell", category: "Communications", staticIcon: BellIconStatic },
+  {
+    icon: FlagIcon,
+    name: "flag",
+    category: "Communications",
+    staticIcon: FlagIconStatic,
+  },
+  {
+    icon: BellIcon,
+    name: "bell",
+    category: "Communications",
+    staticIcon: BellIconStatic,
+  },
   {
     icon: ArrowDownIcon,
     name: "arrow-down",
@@ -204,7 +245,12 @@ const iconsData = [
     category: "Arrows",
     staticIcon: ArrowLeftIconStatic,
   },
-  { icon: BookIcon, name: "book", category: "Real World", staticIcon: BookIconStatic },
+  {
+    icon: BookIcon,
+    name: "book",
+    category: "Real World",
+    staticIcon: BookIconStatic,
+  },
 ];
 
 export default iconsData;
